@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://localhost:27017';
+var mongoDB = 'mongodb://localhost:27017/venuebooker';
 
 mongoose.connect(mongoDB, { useNewUrlParser: true });
 var db = mongoose.connection;
