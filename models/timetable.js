@@ -13,7 +13,7 @@ var timetableSchema = new Schema({
 timetableSchema
 .virtual('classSpan')
 .get(function() {
-    return (this.start - this.end).toString();
+    return (this.start+ '-' +this.end);
 })
 
 module.exports = mongoose.model('Timetable', timetableSchema);
